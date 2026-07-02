@@ -1,0 +1,157 @@
+/* Each theme defines a NIGHT surface set and a DAY surface set.
+   --primary/--accent (the theme's identity colors) stay constant across
+   day/night so the theme still reads as itself, only brightness changes. */
+
+/* ===== ORBIT ===== */
+[data-theme="orbit"] {
+  --primary: #6366f1; --accent: #22d3ee;
+  --font-display: 'Space Grotesk', sans-serif; --font-body: 'Inter', sans-serif;
+}
+[data-theme="orbit"][data-mode="night"] {
+  --bg: #0a0e1a; --bg-elevated: #10162a; --card: #131a30; --card-hover: #171f3a;
+  --border: #232c48; --text: #e2e6f3; --text-muted: #8b93b0; --text-faint: #565f80; --scrollbar: #2a3455;
+}
+[data-theme="orbit"][data-mode="day"] {
+  --bg: #eef0fb; --bg-elevated: #f7f8ff; --card: #ffffff; --card-hover: #f0f1fb;
+  --border: #d7daf0; --text: #1c2140; --text-muted: #565f80; --text-faint: #8b93b0; --scrollbar: #c7cbe8;
+}
+
+/* ===== MUTED OCEAN ===== */
+[data-theme="ocean"] {
+  --primary: #7c93c4; --accent: #5c9eab;
+  --font-display: 'Space Grotesk', sans-serif; --font-body: 'Inter', sans-serif;
+}
+[data-theme="ocean"][data-mode="night"] {
+  --bg: #161b26; --bg-elevated: #1b2130; --card: #1f2534; --card-hover: #252c3d;
+  --border: #2c3446; --text: #d7dde6; --text-muted: #97a1b3; --text-faint: #616b80; --scrollbar: #3a4358;
+}
+[data-theme="ocean"][data-mode="day"] {
+  --bg: #eef2f5; --bg-elevated: #f7f9fa; --card: #ffffff; --card-hover: #eef2f5;
+  --border: #d7dfe6; --text: #1e2733; --text-muted: #5c6b7a; --text-faint: #95a3af; --scrollbar: #c9d3da;
+}
+
+/* ===== WARM SLATE ===== */
+[data-theme="slate"] {
+  --primary: #d9b382; --accent: #c98a5c;
+  --font-display: 'Space Grotesk', sans-serif; --font-body: 'Inter', sans-serif;
+}
+[data-theme="slate"][data-mode="night"] {
+  --bg: #1c1a18; --bg-elevated: #211e1b; --card: #262320; --card-hover: #2c2824;
+  --border: #362f28; --text: #ece6df; --text-muted: #b0a598; --text-faint: #7a6f62; --scrollbar: #4a4038;
+}
+[data-theme="slate"][data-mode="day"] {
+  --bg: #f4efe8; --bg-elevated: #f9f5ef; --card: #fffdf9; --card-hover: #f4efe8;
+  --border: #e6d9c8; --text: #2b2318; --text-muted: #7a6b55; --text-faint: #a6987e; --scrollbar: #dccdb2;
+}
+
+/* ===== SOFT LAVENDER ===== */
+[data-theme="lavender"] {
+  --primary: #a68fd1; --accent: #d9a5c0;
+  --font-display: 'Space Grotesk', sans-serif; --font-body: 'Inter', sans-serif;
+}
+[data-theme="lavender"][data-mode="night"] {
+  --bg: #1a1622; --bg-elevated: #1f1a29; --card: #241f30; --card-hover: #2a2438;
+  --border: #342c44; --text: #e6e1ef; --text-muted: #a99dbf; --text-faint: #756a8c; --scrollbar: #453a5c;
+}
+[data-theme="lavender"][data-mode="day"] {
+  --bg: #f2eef8; --bg-elevated: #f9f6fc; --card: #ffffff; --card-hover: #f2eef8;
+  --border: #e0d4ef; --text: #241f30; --text-muted: #6a5c85; --text-faint: #a294bd; --scrollbar: #d5c5e8;
+}
+
+/* ===== FOREST NIGHT (muted palette) ===== */
+[data-theme="forest"] {
+  --primary: #7fae8a; --accent: #a3c9a8;
+  --font-display: 'Space Grotesk', sans-serif; --font-body: 'Inter', sans-serif;
+}
+[data-theme="forest"][data-mode="night"] {
+  --bg: #131a16; --bg-elevated: #17201b; --card: #1c2620; --card-hover: #222d26;
+  --border: #2b3830; --text: #dde6e0; --text-muted: #96a89e; --text-faint: #647a6d; --scrollbar: #3a4b40;
+}
+[data-theme="forest"][data-mode="day"] {
+  --bg: #eef4f0; --bg-elevated: #f6faf7; --card: #ffffff; --card-hover: #eef4f0;
+  --border: #d6e6da; --text: #16261c; --text-muted: #516b5a; --text-faint: #89a695; --scrollbar: #c3ddc9;
+}
+
+/* ===== HANDWRITTEN (paper + pins) ===== */
+[data-theme="handwritten"] {
+  --primary: #b0492f; --accent: #2f6f7a;
+  --font-display: 'Caveat', cursive; --font-body: 'Caveat', cursive;
+}
+[data-theme="handwritten"][data-mode="day"] {
+  --bg: #ece3d2; --bg-elevated: #f5efe1; --card: #fdf9ee; --card-hover: #f7f1e2;
+  --border: #d8cbab; --text: #3c3428; --text-muted: #7a6d55; --text-faint: #a4977c; --scrollbar: #cdbd97;
+}
+[data-theme="handwritten"][data-mode="night"] {
+  --bg: #2b2620; --bg-elevated: #332d24; --card: #3a3327; --card-hover: #423a2c;
+  --border: #4a4130; --text: #e8dfc9; --text-muted: #b5a888; --text-faint: #7d735a; --scrollbar: #58503c;
+}
+
+/* ===== MODERN ALCOVE (nature + books + tech) ===== */
+[data-theme="alcove"] {
+  --primary: #b8703f; --accent: #7a8f6a;
+  --font-display: 'Playfair Display', serif; --font-body: 'Inter', sans-serif;
+}
+[data-theme="alcove"][data-mode="day"] {
+  --bg: #ece4d3; --bg-elevated: #f6f0e2; --card: #fffdf8; --card-hover: #f8f1e2;
+  --border: #ddcfae; --text: #3a2e22; --text-muted: #7c6a52; --text-faint: #a39277; --scrollbar: #d3bf94;
+}
+[data-theme="alcove"][data-mode="night"] {
+  --bg: #241f19; --bg-elevated: #2c261e; --card: #332c22; --card-hover: #3a3227;
+  --border: #42392c; --text: #efe6d6; --text-muted: #b8a98d; --text-faint: #8a7c63; --scrollbar: #564a38;
+}
+
+/* ===== BIOPHILIC FOREST (ancient mossy forest) ===== */
+[data-theme="biophilic"] {
+  --primary: #7bc47f; --accent: #d8f28e;
+  --font-display: 'Caveat', cursive; --font-body: 'Inter', sans-serif;
+}
+[data-theme="biophilic"][data-mode="night"] {
+  --bg: #10190f; --bg-elevated: #162214; --card: #1b2b19; --card-hover: #22351f;
+  --border: #33472f; --text: #e4ecd8; --text-muted: #a5bb96; --text-faint: #6f8a63; --scrollbar: #40573a;
+}
+[data-theme="biophilic"][data-mode="day"] {
+  --bg: #eef5e6; --bg-elevated: #f6faf1; --card: #ffffff; --card-hover: #eef5e6;
+  --border: #cfe0bd; --text: #1c2a16; --text-muted: #4f6b42; --text-faint: #87a373; --scrollbar: #b9d49f;
+}
+
+/* Decorative background flavor per theme */
+.stars {
+  position: fixed; inset: 0; z-index: 0; pointer-events: none;
+  background-image:
+    radial-gradient(2px 2px at 20px 40px, rgba(255,255,255,0.25), transparent),
+    radial-gradient(1.5px 1.5px at 120px 90px, rgba(255,255,255,0.18), transparent),
+    radial-gradient(1.5px 1.5px at 200px 200px, rgba(99,102,241,0.35), transparent),
+    radial-gradient(2px 2px at 300px 60px, rgba(34,211,238,0.25), transparent);
+  background-repeat: repeat; background-size: 340px 340px; opacity: 0.5;
+}
+[data-theme="orbit"][data-mode="night"] .stars,
+[data-theme="ocean"][data-mode="night"] .stars,
+[data-theme="slate"][data-mode="night"] .stars,
+[data-theme="lavender"][data-mode="night"] .stars,
+[data-theme="forest"][data-mode="night"] .stars { opacity: 0.35; }
+[data-theme="orbit"][data-mode="day"] .stars,
+[data-theme="ocean"][data-mode="day"] .stars,
+[data-theme="slate"][data-mode="day"] .stars,
+[data-theme="lavender"][data-mode="day"] .stars,
+[data-theme="forest"][data-mode="day"] .stars { opacity: 0.08; }
+[data-theme="handwritten"] .stars, [data-theme="alcove"] .stars { opacity: 0; }
+[data-theme="biophilic"] .stars {
+  background-image: radial-gradient(2px 2px at 40px 60px, rgba(216,242,142,0.4), transparent),
+    radial-gradient(1.5px 1.5px at 160px 120px, rgba(123,196,127,0.3), transparent),
+    radial-gradient(2px 2px at 260px 200px, rgba(216,242,142,0.25), transparent);
+}
+[data-theme="biophilic"][data-mode="night"] .stars { opacity: 0.5; }
+[data-theme="biophilic"][data-mode="day"] .stars { opacity: 0.2; }
+
+[data-theme="handwritten"] body, [data-theme="alcove"] body {
+  background-image: repeating-linear-gradient(0deg, rgba(0,0,0,0.015) 0px, transparent 1px, transparent 26px, rgba(0,0,0,0.015) 27px);
+}
+[data-theme="biophilic"] body {
+  background-image: radial-gradient(ellipse at 20% 0%, rgba(123,196,127,0.1), transparent 60%),
+    radial-gradient(ellipse at 80% 100%, rgba(216,242,142,0.07), transparent 55%);
+}
+
+/* Theme-specific FAB looks */
+[data-theme="alcove"] .fab { background: radial-gradient(circle at 30% 30%, #c98a5c, #8a5a35); color: #fff8ec; }
+[data-theme="biophilic"] .fab { background: radial-gradient(circle at 30% 30%, #a3c98a, #4d6b3f); color: #10190f; border-radius: 46% 54% 55% 45% / 50% 45% 55% 50%; }
+[data-theme="handwritten"] .fab { background: #c0392b; box-shadow: 0 4px 10px rgba(0,0,0,0.35); }

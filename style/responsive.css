@@ -1,0 +1,41 @@
+/* ============ DESKTOP LAYOUT (≥900px) ============
+   Keep the original centered layout on larger screens so the app stays
+   visually consistent with the initial design. */
+
+@media (min-width: 900px) {
+  body {
+    padding: 28px 16px 96px;
+  }
+
+  .app {
+    max-width: 520px;
+    margin: 0 auto;
+    padding: 0;
+  }
+
+  .tabs-nav { margin-bottom: 12px; }
+  .tabs-nav .nav-btn { flex-direction: row; justify-content: center; gap: 8px; padding: 10px 12px; border-radius: 12px; font-size: 12px; }
+  .tabs-nav .nav-btn.active { background: linear-gradient(135deg, color-mix(in srgb, var(--primary) 18%, transparent), color-mix(in srgb, var(--accent) 18%, transparent)); }
+
+  .list-frame { height: 380px; }
+
+  .composer {
+    left: 0; right: 0; top: auto; bottom: 0;
+    width: auto; max-width: 520px;
+    border-radius: 20px 20px 0 0; padding: 10px 18px 22px;
+    transform: translateY(100%);
+    opacity: 1; pointer-events: auto;
+    transition: transform 0.28s cubic-bezier(.4,0,.2,1);
+  }
+  .composer.open { transform: translateY(0); }
+
+  .settings-overlay { left: 0; right: 0; width: auto; max-width: none; border-left: none; }
+
+  .action-sheet { left: 0; right: 0; bottom: 0; width: auto; border-radius: 20px 20px 0 0; }
+
+  .fab { right: 22px; bottom: 82px; }
+}
+
+@media (min-width: 1200px) {
+  .app { max-width: 520px; }
+}
